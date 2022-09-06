@@ -1,0 +1,206 @@
+/* VARIÁVEIS */
+:root{
+/* CORES */
+--color-primary: #2E245E;
+--color-secondary: #6B54DE;
+--color-grey100: #333333;
+--color-grey50: #828282;
+/* TÍTULOS */
+--font-title1: 26px, bold;
+--font-title2: 22px, bold;
+--font-title3: 18px, bold;
+--fontsize-paragraph: 16px;
+--fontsize-small: 14px;
+--fontsize-caption: 12px;
+}
+
+/* BODY */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+header{
+    width: 100%;
+    height: 3em;
+    background-color: #F5F5F5;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
+    margin-bottom: 15px;
+    
+}
+
+header figure h1{
+    color: var(--color-grey100);
+    font-size: var(--font-title1);
+    font-weight: 900;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
+header figure h1:hover{
+    cursor: pointer;
+}
+
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 70px;
+    margin-top: 20px;       
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: var(--color-grey50);
+    font-size: var(--fontsize-paragraph);
+    padding-right: 15px;   
+}
+
+/* MAIN */
+main section{
+    width: 90%;   
+    margin: 0 auto;    
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;    
+}
+
+main .produtos{
+    width: 72%;
+    height: 380px;
+    margin: 0 auto;  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+   
+}
+
+main .cardProduto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 380px;
+    border: 1px solid #F5F5F5;      
+}
+
+main .imgProduto{
+    width: 250px;
+    height: 154px;
+    text-align: center;
+    background-color: #F5F5F5;
+}
+div .descricaoProduto{
+    text-align: left;
+}
+
+div .descricaoProduto button{
+    background-color: var(--color-primary);
+    color: white;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+div .descricaoProduto button:hover{
+    cursor: pointer;
+}
+
+figcaption.figcaptions{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 15px;
+    
+}
+
+p.descricao{
+    width: 245px;    
+    font-size: var(--fontsize-caption);
+    color: var(--color-grey50);
+    margin: 15px 12px 15px 15px;
+
+}
+p.valor{
+    font-size:var(--fontsize-paragraph);
+    font-weight: 600;
+    color: var(--color-primary);
+    margin: 15px 12px 15px 15px;
+}
+
+a.carrinhoLink{
+    font-size: var(--fontsize-paragraph);
+    color: var(--color-grey50);
+    margin: 15px 12px 15px 15px;
+}
+
+
+main .carrinho{
+    width: 26%;    
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+main .pesquisa{
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+       
+}
+
+main .pesquisa input{
+    width: 225px;
+    height: 30px;
+    background-color: #F5F5F5;
+    border-style: none;    
+}
+main .pesquisa button{
+    background-color: var(--color-secondary);
+    height: 30px;
+    width: 100px;
+    background-color: var(--color-secondary);
+    color: white;
+    font-size: var(--fontsize-paragraph);    
+    border-style: none;
+}
+
+main .pesquisa button:hover{
+    cursor: pointer;
+}
+
+main .compras{
+    height: 374px;
+    background-color: #F5F5F5;
+    text-align: center;
+}
+
+main .compras button{
+    width: 315px;
+    height: 30px;
+    background-color: var(--color-secondary);
+    color: white;
+    font-size: var(--fontsize-paragraph);    
+    border-style: none;
+}
+
+main .compras button:hover{
+    cursor: pointer;
+}
+
+main .compras h3{
+    font-size: var(--font-title2);
+    font-weight: 700;
+    padding-top: 118px;
+}
+
+main .compras p{
+    font-size: var(--fontsize-paragraph);
+    color: var(--color-grey50);
+    margin-top: 20px;
+}
+
